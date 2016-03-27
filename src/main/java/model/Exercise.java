@@ -1,4 +1,4 @@
-package com.fitApp.controller.model;
+package model;
 
 /**
  * Created by vitaliiromanchenko on 26.03.16.

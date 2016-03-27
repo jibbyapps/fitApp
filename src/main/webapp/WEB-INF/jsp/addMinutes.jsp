@@ -1,4 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: vitaliiromanchenko
@@ -13,11 +14,13 @@
 </head>
 <body>
 <h1> add minutes rock n roll</h1>
+
+Language: <a href="?language=en">English</a> | <a href="?language=es">Spanish</a>
 <form:form commandName="exercise">
     <table>
         <tr>
             <td>
-                minutes exersiced today:
+               <spring:message code="goal.text"/>
             </td>
 
             <td>
@@ -35,5 +38,7 @@
 
     </table>
 </form:form>
+
+<h1> our Goal for today: ${goal.minutes}</h1>
 </body>
 </html>
