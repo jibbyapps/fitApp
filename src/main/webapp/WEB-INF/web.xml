@@ -16,6 +16,11 @@
      <url-pattern>*.html</url-pattern>
  </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>springmvc</servlet-name>
+        <url-pattern>*.json</url-pattern>
+    </servlet-mapping>
+
 
     <servlet-mapping>
         <servlet-name>springmvc</servlet-name>
