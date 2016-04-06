@@ -1,9 +1,17 @@
-package model;
+package com.fitApp.model;
 
 /**
  * Created by vitaliiromanchenko on 26.03.16.
  */
-public class Exercise {
+
+
+import org.hibernate.validator.constraints.Range;
+
+
+public class Goal {
+    @Range(min = 1,max = 120)
+    private int minutes;
+
     public int getMinutes() {
         return minutes;
     }
@@ -12,5 +20,4 @@ public class Exercise {
         this.minutes = minutes;
     }
 
-    private int minutes;
 }
